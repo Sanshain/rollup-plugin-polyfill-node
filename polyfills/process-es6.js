@@ -134,6 +134,8 @@ Item.prototype.run = function () {
 var title = 'browser';
 var platform = 'browser';
 var browser = true;
+var stdout = {}
+var stdin = {}
 var env = {};
 var argv = [];
 var version = ''; // empty string to avoid regexp issues
@@ -217,7 +219,9 @@ var browser$1 = {
   platform: platform,
   release: release,
   config: config,
-  uptime: uptime
+  uptime: uptime,
+  stdout: stdout,
+  stdin: stdin
 };
 
 export { addListener, argv, binding, browser, chdir, config, cwd, browser$1 as default, emit, env, hrtime, nextTick, off, on, once, platform, release, removeAllListeners, removeListener, title, umask, uptime, version, versions };

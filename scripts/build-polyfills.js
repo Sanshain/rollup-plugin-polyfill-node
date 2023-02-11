@@ -7,7 +7,7 @@ const json = require('rollup-plugin-json');
 
 async function main() {
   await Promise.all([
-    bundleDependency('process-es6'),
+    // bundleDependency('process-es6'),
     bundleDependency('buffer-es6'),
     // bundleDependency('browserify-fs'),
     // bundleDependency('crypto-browserify'),
